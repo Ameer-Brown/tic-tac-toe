@@ -1,8 +1,42 @@
 #board {
-  margin-top: 10px;
+  margin-top: 50px;
+
 }
 
 .box {
-  border: 1px solid black;
+  border: 1px dashed black;
   height: 150px;
+}
+
+#bloc11,#bloc12,#bloc21,#bloc22  {
+  border-style: none solid solid none;
+  border-width: 5px;
+  border-color: #0099ff
+}
+
+
+#bloc13,#bloc23 {
+  border-style: none none solid none;
+  border-width: 5px;
+  border-color: #0099ff
+}
+
+#bloc31,#bloc32 {
+  border-style: none solid none none;
+  border-width: 5px;
+  border-color: #0099ff
+}
+
+#bloc33 {
+  border-style: none none none none
+}
+
+button {
+  align: center;
+}
+
+h1 {
+
+  color: #0099ff;
+
 }
