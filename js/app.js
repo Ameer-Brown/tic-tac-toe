@@ -11,7 +11,8 @@ $(document).ready(function(){
     onStix = 1;
     clickCount ++;
     bloca.text("o");
-    bloca.css("background","url(oflow.jpg)");
+    bloca.css("background","url(oflow.jpg)")
+    bloca.css("background-size", "inherit");
     // block double claiming
     bloca.off();
     // winner(true);
@@ -22,6 +23,7 @@ $(document).ready(function(){
   clickCount ++;
   bloca.text("x");
   bloca.css("background","url(xwind.jpg)");
+  bloca.css("background-size", "inherit");
   // block double claiming
   bloca.off();}
   console.log(clickCount);
@@ -58,15 +60,12 @@ $(document).ready(function(){
   else if ( clickCount === 9){
       alert("Tie, Play Again!");
   }
-  
+
 // Reset Board
   $("button").on("click", function (){
-  document.querySelector("button").addEventListener("click", function() {
   localStorage.clear();
   window.location.reload();
   clickCount = 0;
-});
-
 });
 
 });
